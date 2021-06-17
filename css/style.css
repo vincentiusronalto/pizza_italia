@@ -4,13 +4,13 @@ body, html {
     margin: 0;
     background: white;
     font-family: 'Nothing You Could Do', cursive;
-    background-color: black;
+    background-color: white;
 }
 
 /* The hero image */
 .hero-image {
     /* The image used */
-    background-image: url("../img/menu/resto.jpg");
+    background-image: url("../img/back.jpg");
 
     /* Set a specific height */
     height: 100%;
@@ -30,13 +30,13 @@ body, html {
     top: 300px;
     left: 50%;
     transform: translate(-50%, -140%);
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(65, 244, 152,0.2);
     font-weight:100;
     font-family: 'Nothing You Could Do', cursive;
     font-size: 15px;
     /*border-left: .02px thin red;*/
     /*padding: 10px;*/
-    color: red;
+    color: rgba(244, 179, 66, 1);
     text-shadow: .3px .3px white;
 
 }
@@ -62,17 +62,18 @@ h5#since {
 #oval {
     width: 300px;
     height: 100px;
-    border: 1px solid red;
+    border: 1px solid rgba(244, 179, 66, 0.3);
     border-radius: 50%;
     position: absolute;
     /*top: 25px;*/
 }
 
 #navigation {
-    background-color: rgba(255, 0, 0, 0.3);
+    background-color: rgba(244, 179, 66, 0.3);
 
     width: 100%;
-    position: absolute;
+    position: fixed;
+
     z-index: 10;
     left: 0;
     font-size: 1.3em;
@@ -86,13 +87,30 @@ h5#since {
     display: inline-block;
     padding-right: 10px;
 }
+
+#home li a{
+     text-decoration: none;
+     color: white;
+}
+
+#home li a:hover{
+
+     background-color: rgba(0,0,0,0.7);
+}
+
+.hideme
+{
+    opacity:0;
+}
+
 /********END HERO IMAGE ****/
 
 /**************MENU********/
 
-#img1, #img2, #img3, #img4 {
-  max-width: 100%;
 
+#img1, #img2, #img3, #img4 {
+  max-width: 70%;
+  max-height: 80%;
   -moz-transition: all 0.3s;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -109,6 +127,7 @@ h5#since {
     margin: 0 auto;
     height: 100%;
     color: white;
+
 }
 .desc {
     z-index: 1000;
@@ -145,7 +164,7 @@ width: 36%;
 .about-hero {
 
     /* The image used */
-    background-image: url("../img/pizza-chef.jpg");
+    background-image: url("../img/flat_red.png");
     /* Set a specific height */
     height: 768px;
     /* Position and center the image to scale nicely on all screens */
@@ -168,7 +187,7 @@ width: 36%;
 
 .contact {
     height: 768px;
-    color: white;
+    color: black;
     text-align: center;
 
 }
@@ -199,9 +218,9 @@ input[type=submit]:hover {
 
 .container {
     text-align: left;
-    color: white;
+    color: black;
     border-radius: 5px;
-    background-color: black;
+    background-color: white;
     padding: 20px;
     width: 80%;
     margin: 0 auto;
